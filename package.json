@@ -1,0 +1,29 @@
+{
+  "name": "azf-calendar-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vtfk/azf-calendar-api.git"
+  },
+  "keywords": [],
+  "author": "Mats Andreassen <matsand@live.no> (https://github.com/matsand)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vtfk/azf-calendar-api/issues"
+  },
+  "homepage": "https://github.com/vtfk/azf-calendar-api#readme",
+  "dependencies": {
+    "axios": "0.20.0",
+    "node-cache": "5.1.2",
+    "qs": "6.9.4",
+    "uppercamelcase": "3.0.0"
+  },
+  "devDependencies": {
+    "standard": "14.3.4"
+  }
+}

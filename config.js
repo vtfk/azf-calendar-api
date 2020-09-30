@@ -20,7 +20,8 @@ module.exports = {
       tenantId: process.env.GRAPH_TENANT_ID || '08f3813c-9f29-482f-9aec-16ef7cbf477a'
     },
     events: {
-      endpoint: process.env.GRAPH_EVENTS_ENDPOINT || 'calendarview'
+      endpoint: process.env.GRAPH_EVENTS_ENDPOINT || 'calendarview',
+      eventsDaysAhead: process.env.GRAPH_EVENTS_DAYS_AHEAD || 14,
     },
     configList: {
       sitesUrl: process.env.GRAPH_SITE_ENDPOINT || 'https://graph.microsoft.com/v1.0/sites',

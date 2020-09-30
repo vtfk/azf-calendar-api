@@ -22,6 +22,7 @@ module.exports = {
     events: {
       endpoint: process.env.GRAPH_EVENTS_ENDPOINT || 'calendarview',
       eventsDaysAhead: process.env.GRAPH_EVENTS_DAYS_AHEAD || 14,
+      top: process.env.GRAPH_EVENTS_TOP || 20
     },
     configList: {
       sitesUrl: process.env.GRAPH_SITE_ENDPOINT || 'https://graph.microsoft.com/v1.0/sites',

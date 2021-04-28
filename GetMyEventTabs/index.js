@@ -8,9 +8,6 @@ module.exports = async (context, req) => {
     const graphUser = await authGraphUser(context, req)
     context.log(['events', 'get-my-event-tabs', graphUser.userPrincipalName])
 
-    const userEvents = await getUserEvents(context, token, graphUser)
-    context.log(['events', 'get-my-event-tabs', graphUser.userPrincipalName, 'return', userEvents.length, 'events'])
-
     const userEventTabs = await getUserEventTabs(context, token, graphUser)
     context.log(['events', 'get-my-event-tabs', graphUser.userPrincipalName, 'return', userEventTabs.length, 'tabs'])
 
@@ -19,11 +16,6 @@ module.exports = async (context, req) => {
       body: {
         user: graphUser,
         tabs: [
-          {
-            tabName: 'Min kalender',
-            sortOrder: 0,
-            events: userEvents
-          },
           ...userEventTabs
         ]
       }

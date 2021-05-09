@@ -24,6 +24,6 @@
     "uppercamelcase": "3.0.0"
   },
   "devDependencies": {
-    "standard": "14.3.4"
+    "standard": "15.0.1"
   }
 }

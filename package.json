@@ -20,7 +20,7 @@
   "dependencies": {
     "axios": "0.20.0",
     "node-cache": "5.1.2",
-    "qs": "6.9.4",
+    "qs": "6.9.7",
     "uppercamelcase": "3.0.0"
   },
   "devDependencies": {

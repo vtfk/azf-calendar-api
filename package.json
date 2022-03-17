@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "standard"
+    "test": "standard",
+    "start": "func start",
+    "deploy:test": "func azure functionapp publish test-func-calendar-api-v1",
+    "deploy:prod": "func azure functionapp publish prod-func-calendar-api-v1"
   },
   "repository": {
     "type": "git",
@@ -18,9 +21,9 @@
   },
   "homepage": "https://github.com/vtfk/azf-calendar-api#readme",
   "dependencies": {
-    "axios": "0.20.0",
+    "axios": "0.26.1",
     "node-cache": "5.1.2",
-    "qs": "6.9.7",
+    "qs": "6.10.3",
     "uppercamelcase": "3.0.0"
   },
   "devDependencies": {

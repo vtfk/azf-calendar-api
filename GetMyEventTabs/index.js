@@ -1,6 +1,5 @@
 const authGraphUser = require('../lib/auth-graph-user')
 const getUserEventTabs = require('../lib/get-user-event-tabs')
-const getUserEvents = require('../lib/get-user-events')
 
 module.exports = async (context, req) => {
   try {

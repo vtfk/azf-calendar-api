@@ -179,6 +179,13 @@ Authentication: Bearer \<Microsoft Graph API token>
 }
 ```
 
+### Mock
+
+#### GET /mock/me
+Returns a mocked result of data from [GET /me](https://github.com/vtfk/azf-calendar-api#get-me) with a random number of events
+
+#### GET /mock/me/tabs
+Returns a mocked result of data from [GET /me/tabs](https://github.com/vtfk/azf-calendar-api#get-metabs) with a random number of events for `Min kalender` and `Politiske møter` tabs
 ## Development
 
 - Clone the repo

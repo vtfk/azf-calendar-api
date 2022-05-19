@@ -4,10 +4,11 @@ const getUserEventTabs = require('../lib/get-user-event-tabs')
 module.exports = async (context, req) => {
   try {
     const token = req.headers.authorization
+    const { force } = req.query
     const graphUser = await authGraphUser(context, req)
     context.log(['events', 'get-my-event-tabs', graphUser.userPrincipalName])
 
-    const userEventTabs = await getUserEventTabs(context, token, graphUser)
+    const userEventTabs = await getUserEventTabs(context, token, graphUser, !!force)
     context.log(['events', 'get-my-event-tabs', graphUser.userPrincipalName, 'return', userEventTabs.length, 'tabs'])
 
     context.res = {

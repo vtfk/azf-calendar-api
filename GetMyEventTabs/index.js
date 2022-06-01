@@ -10,6 +10,7 @@ module.exports = async (context, req) => {
     if (!graphUser || !graphUser.userPrincipalName) throw new HTTPError(403, 'Unauthorized')
     context.log(['events', 'get-my-event-tabs', graphUser.userPrincipalName])
 
+    if (force) context.log(['events', 'get-my-event-tabs', 'force enabled, will skip cache'])
     const userEventTabs = await getUserEventTabs(context, token, graphUser, !!force)
     context.log(['events', 'get-my-event-tabs', graphUser.userPrincipalName, 'return', userEventTabs.length, 'tabs'])
 

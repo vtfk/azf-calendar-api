@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/vtfk/azf-calendar-api#readme",
   "dependencies": {
-    "axios": "0.26.1",
+    "axios": "1.6.0",
     "node-cache": "5.1.2",
     "qs": "6.10.5",
     "uppercamelcase": "3.0.0"
